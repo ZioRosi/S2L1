@@ -1,0 +1,20 @@
+Zona di Internet (Cloud o simbolo di Internet):
+La zona di Internet rappresenta l'esterno della nostra rete, dove si trovano i servizi e le risorse accessibili pubblicamente, come siti web, server email e altro. Tutte le comunicazioni in entrata e in uscita dalla nostra rete passano attraverso questa zona, che funge da confine tra il nostro ambiente di rete e il vasto mondo di Internet.
+
+Firewall Perimetrale:
+Il firewall perimetrale è un componente cruciale della nostra infrastruttura di rete. Posizionato strategicamente tra la zona di Internet e le altre zone della rete, il firewall perimetrale funge da guardiano digitale, monitorando e controllando il traffico in entrata e in uscita. Utilizzando regole di sicurezza predefinite, il firewall protegge la nostra rete da minacce esterne, come attacchi DDoS, intrusioni e malware, garantendo che solo il traffico autorizzato possa attraversare il confine della nostra rete.
+
+Zona DMZ:
+La zona DMZ (Demilitarized Zone) è un'area intermedia tra la rete interna e la rete esterna (Internet). È progettata per ospitare i servizi che devono essere accessibili sia dall'esterno che dall'interno della rete. Ad esempio, qui collocaremo almeno un server web (HTTP) e un server di posta elettronica (SMTP), consentendo loro di essere accessibili pubblicamente senza compromettere la sicurezza della nostra rete interna. La DMZ fornisce un ulteriore strato di protezione isolando i server esposti pubblicamente dalla rete interna, riducendo così il rischio di attacchi diretti.
+
+Rete Interna:
+La rete interna costituisce il cuore della nostra infrastruttura di rete. Qui sono ospitati e gestiti i server e i dispositivi interni utilizzati per le operazioni quotidiane dell'organizzazione. Questa zona è isolata dall'esterno e contiene risorse sensibili e dati critici. Proteggere la rete interna è di fondamentale importanza per mantenere la sicurezza dei dati e garantire il corretto funzionamento delle operazioni aziendali.
+
+Filtraggio Dinamico:
+Il filtraggio dinamico è una tecnica avanzata di protezione della rete che può essere implementata nel nostro firewall perimetrale. A differenza del filtraggio statico, che si basa su regole statiche predefinite, il filtraggio dinamico monitora e analizza il traffico di rete in tempo reale, adattando le regole di sicurezza in base alle caratteristiche dinamiche del traffico. Questo approccio più flessibile e reattivo consente al nostro firewall di adattarsi rapidamente alle nuove minacce e ai cambiamenti nel comportamento del traffico di rete, garantendo una protezione più efficace e aggiornata della nostra infrastruttura di rete.
+
+IPS (Intrusion Prevention System):
+L'IPS è un componente aggiuntivo alla nostra infrastruttura di sicurezza. È progettato per monitorare e analizzare il traffico di rete in tempo reale, rilevando e prevenendo attivamente attacchi informatici come intrusioni, malware e tentativi di exploit. Nella nostra configurazione, l'IPS sarà posizionato sulla parte della rete collegata ai server HTTPS e SMTP, garantendo una protezione proattiva contro le minacce che possono mirare a tali servizi pubblicamente accessibili.
+
+IDS (Intrusion Detection System):
+L'IDS è un sistema di sicurezza complementare che monitora costantemente il traffico di rete per individuare eventuali anomalie o attività sospette che potrebbero indicare una violazione della sicurezza. Contrariamente all'IPS, che agisce attivamente per bloccare le minacce, l'IDS fornisce una funzione di rilevamento, avvertendoci tempestivamente di potenziali intrusioni o attività non autorizzate. Nella nostra configurazione, l'IDS sarà implementato per proteggere il NAS (Network Attached Storage), assicurando la sicurezza e l'integrità dei dati archiviati all'interno della nostra rete interna.
